@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kau Gold — Joias e Acessórios</title>
+<meta name="description" content="Semijoias e peças folheadas a ouro: colares, brincos, pulseiras e anéis. Compre online na Kau Gold.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+:root{--bg:#fbf6f3;--card:#fff;--sec:#f3e8e4;--fg:#2a1f21;--mut:#7d6b6e;--bd:#e8d8d4;--pri:#c9897f;--prf:#fff;--soft:#a8645a;--g1:#d9a08f;--g2:#b8736a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17110f;--card:#211917;--sec:#2c211e;--fg:#f5ebe6;--mut:#a89690;--bd:#3a2c28;--pri:#e0a597;--prf:#1a1210;--soft:#e8b4a6;--g1:#f0c2b2;--g2:#d99383}}
+:root[data-theme="dark"]{--bg:#17110f;--card:#211917;--sec:#2c211e;--fg:#f5ebe6;--mut:#a89690;--bd:#3a2c28;--pri:#e0a597;--prf:#1a1210;--soft:#e8b4a6;--g1:#f0c2b2;--g2:#d99383}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--fg);font-family:'Jost',system-ui,sans-serif;line-height:1.5}
+h1,h2,h3,.font-display{font-family:'Playfair Display',Georgia,serif}
+a{color:inherit;text-decoration:none}
+.grad{background:linear-gradient(90deg,var(--g1),var(--g2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;border-bottom:1px solid var(--bd);background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:1rem;padding-bottom:1rem}
+.logo{font-size:1.5rem;letter-spacing:.03em}
+nav{display:none;gap:2rem;font-size:.875rem;color:var(--mut)}
+nav a:hover{color:var(--fg)}
+@media(min-width:640px){nav{display:flex}}
+.bag{display:flex;align-items:center;gap:.5rem;border:1px solid var(--bd);border-radius:999px;padding:.5rem 1rem;background:none;color:inherit;font:inherit;font-size:.875rem;cursor:pointer}
+.bag:hover{border-color:var(--pri)}
+.bag b{background:var(--pri);color:var(--prf);border-radius:999px;font-size:.7rem;padding:0 .45rem;font-weight:500}
+.hero{position:relative;height:70vh;min-height:420px;overflow:hidden;background:radial-gradient(circle at 70% 30%,var(--g1),transparent 55%),linear-gradient(135deg,var(--sec),var(--bg))}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,var(--bg),color-mix(in srgb,var(--bg) 40%,transparent),transparent)}
+.hero .in{position:absolute;inset:auto 0 0;z-index:2;padding-bottom:4rem}
+.eyebrow{font-size:.875rem;font-weight:500;text-transform:uppercase;letter-spacing:.3em;color:var(--pri);margin-bottom:.5rem}
+h1{font-size:clamp(2.6rem,7vw,3.75rem);font-weight:600;line-height:1.15;max-width:42rem}
+.hero p.sub{margin-top:1rem;max-width:36rem;color:var(--mut)}
+.btn{display:inline-flex;margin-top:2rem;background:var(--pri);color:var(--prf);border-radius:999px;padding:.75rem 2rem;font-weight:500;transition:transform .2s}
+.btn:hover{transform:scale(1.05)}
+.fade{animation:up .8s ease both}@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+section.cat{padding:5rem 0}
+h2{font-size:clamp(1.9rem,4vw,2.25rem);font-weight:600}
+.lead{margin-top:.5rem;color:var(--mut)}
+.grid{display:grid;gap:1.5rem;margin-top:2.5rem;grid-template-columns:1fr}
+@media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{overflow:hidden;border:1px solid var(--bd);border-radius:1rem;background:var(--card);transition:border-color .2s}
+.card:hover{border-color:color-mix(in srgb,var(--pri) 60%,transparent)}
+.ph{aspect-ratio:1;background:linear-gradient(135deg,var(--sec),var(--bd));display:grid;place-items:center;font-size:3rem;transition:transform .5s}
+.card:hover .ph{transform:scale(1.05)}
+.ph-w{overflow:hidden}
+.info{padding:1.25rem 1.25rem 0}
+.tag{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mut)}
+.info h3{margin-top:.25rem;font-size:1.125rem;font-weight:600}
+.info p{margin-top:.25rem;font-size:.875rem;color:var(--mut)}
+.buy{display:flex;align-items:center;justify-content:space-between;padding:1.25rem}
+.price{font-size:1.125rem;font-weight:600;color:var(--soft)}
+.add{border:0;border-radius:999px;background:var(--pri);color:var(--prf);padding:.5rem 1rem;font:inherit;font-size:.875rem;font-weight:500;cursor:pointer;transition:transform .2s}
+.add:hover{transform:scale(1.05)}
+#sobre{border-top:1px solid var(--bd);background:color-mix(in srgb,var(--card) 40%,transparent);text-align:center;padding:5rem 0}
+#sobre p{max-width:42rem;margin:1rem auto 0;color:var(--mut)}
+footer{border-top:1px solid var(--bd);padding:4rem 1rem;display:flex;flex-direction:column;align-items:center;gap:1.5rem;text-align:center}
+footer .sm{font-size:.875rem;color:var(--mut)}
+.ig{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--bd);border-radius:999px;padding:.75rem 1.5rem;font-size:.875rem;transition:.2s}
+.ig:hover{border-color:var(--pri);color:var(--soft)}
+.xs{font-size:.75rem;color:var(--mut)}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:50;opacity:0;pointer-events:none;transition:.25s}
+.ov.on{opacity:1;pointer-events:auto}
+.dr{position:fixed;top:0;right:0;bottom:0;width:min(26rem,100%);background:var(--bg);z-index:60;transform:translateX(100%);transition:transform .3s;display:flex;flex-direction:column;border-left:1px solid var(--bd);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.dr.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:1.25rem;border-bottom:1px solid var(--bd)}
+.dh h3{font-size:1.25rem}
+.x{background:none;border:0;color:var(--mut);font-size:1.5rem;cursor:pointer;line-height:1}
+.db{flex:1;overflow-y:auto;padding:1.25rem}
+.it{display:flex;gap:.75rem;align-items:center;padding:.6rem 0;border-bottom:1px solid var(--bd)}
+.it .t{font-size:1.5rem;width:2.8rem;height:2.8rem;display:grid;place-items:center;background:var(--sec);border-radius:.6rem}
+.it .m{flex:1;font-size:.875rem}.it .m small{color:var(--mut);display:block}
+.q{display:flex;align-items:center;gap:.4rem}
+.q button{width:1.6rem;height:1.6rem;border-radius:50%;border:1px solid var(--bd);background:none;color:inherit;cursor:pointer}
+.lb{margin:1.25rem 0 .6rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mut)}
+.pm{display:flex;gap:.75rem;align-items:center;border:1px solid var(--bd);border-radius:.75rem;padding:.75rem;margin-bottom:.5rem;cursor:pointer;background:var(--card)}
+.pm.on{border-color:var(--pri);box-shadow:0 0 0 1px var(--pri)}
+.pm i{font-style:normal;font-size:1.3rem}.pm span{flex:1;font-size:.9rem}.pm small{display:block;color:var(--mut);font-size:.75rem}
+.pm em{font-style:normal;font-size:.7rem;background:var(--pri);color:var(--prf);border-radius:999px;padding:.1rem .5rem}
+.fm{display:grid;gap:.5rem;grid-template-columns:1fr 1fr;margin-top:.5rem}
+.fm input,.fm select{width:100%;padding:.65rem .75rem;border:1px solid var(--bd);border-radius:.6rem;background:var(--card);color:var(--fg);font:inherit;font-size:.875rem}
+.fm .f{grid-column:1/-1}
+.info2{font-size:.8rem;color:var(--mut);margin-top:.5rem}
+.df{padding:1.25rem;border-top:1px solid var(--bd)}
+.row{display:flex;justify-content:space-between;font-size:.875rem;margin-bottom:.3rem;color:var(--mut)}
+.row.tt{color:var(--fg);font-size:1.1rem;font-weight:600}
+.df .btn{width:100%;justify-content:center;margin-top:1rem;border:0;font:inherit;font-weight:500;cursor:pointer}
+.ok{text-align:center;padding:3rem 1rem}.ok .big{font-size:3rem}.ok h3{margin:.5rem 0}
+.empty{text-align:center;color:var(--mut);padding:3rem 0}
+.wa{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:45;display:flex;align-items:center;gap:.5rem;background:#25d366;color:#fff;border-radius:999px;padding:.7rem 1.1rem;font-size:.875rem;font-weight:500;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.wa:hover{filter:brightness(1.05)}
+.lj{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.55);display:grid;place-items:center;padding:1rem}
+.lj>div{background:var(--bg);border:1px solid var(--bd);border-radius:1rem;width:min(28rem,100%);max-height:90vh;overflow:auto;padding:1.5rem}
+.lj h3{font-size:1.4rem;margin-bottom:.25rem}
+.lj label{display:flex;justify-content:space-between;align-items:center;padding:.6rem 0;border-bottom:1px solid var(--bd);font-size:.9rem;cursor:pointer}
+.lj .acts{display:flex;gap:.5rem;margin-top:1.25rem;flex-wrap:wrap}
+.lj .acts a,.lj .acts button{border:1px solid var(--bd);background:none;color:inherit;border-radius:999px;padding:.55rem 1rem;font:inherit;font-size:.85rem;cursor:pointer}
+.lj .acts button.p{background:var(--pri);color:var(--prf);border-color:var(--pri)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="logo font-display grad">Kau Gold</span>
+  <nav><a href="#catalogo">Catálogo</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+  <button class="bag" id="bag" aria-label="Abrir sacola">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.1 6h17.8"/><path d="M3.4 5.5a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.7a2 2 0 0 0-.4-1.2l-2-2.7A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg>
+    <span>Sacola</span><b id="count" hidden>0</b>
+  </button>
+</div></header>
+
+<section class="hero"><div class="in"><div class="wrap fade">
+  <p class="eyebrow">Joias &amp; Acessórios</p>
+  <h1>Brilho que <span class="grad">marca</span> cada momento</h1>
+  <p class="sub">Semijoias e peças folheadas selecionadas para você. Compre online e receba em casa.</p>
+  <a class="btn" href="#catalogo">Ver catálogo</a>
+</div></div></section>
+
+<section class="cat wrap" id="catalogo">
+  <h2>Nosso <span class="grad">catálogo</span></h2>
+  <p class="lead">Escolha suas peças favoritas e adicione à sacola.</p>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section id="sobre"><div class="wrap">
+  <h2>Sobre a <span class="grad">Kau Gold</span></h2>
+  <p>Nascemos da paixão por peças que contam histórias. Trabalhamos com semijoias e folheados a ouro escolhidos com cuidado para unir elegância, qualidade e um preço justo — para você brilhar todos os dias.</p>
+</div></section>
+
+<footer id="contato">
+  <span class="logo font-display grad">Kau Gold</span>
+  <p class="sm">Fale com a gente e acompanhe as novidades:</p>
+  <a class="ig" href="https://www.instagram.com/_kaugold" target="_blank" rel="noreferrer">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>@_kaugold</a>
+  <a class="ig" href="https://chat.whatsapp.com/GMRoeYWE3D04PBONCIcNak" target="_blank" rel="noreferrer">💬 Entrar no grupo do WhatsApp</a>
+  <p class="xs">© 2026 Kau Gold — Joias e Acessórios</p>
+</footer>
+
+<a class="wa" href="https://chat.whatsapp.com/GMRoeYWE3D04PBONCIcNak" target="_blank" rel="noreferrer" aria-label="Entrar no grupo do WhatsApp">💬 Grupo no WhatsApp</a>
+<div class="ov" id="ov"></div>
+<aside class="dr" id="dr" aria-label="Sacola">
+  <div class="dh"><h3>Sua sacola</h3><button class="x" id="cl" aria-label="Fechar">×</button></div>
+  <div class="db" id="body"></div>
+  <div class="df" id="foot"></div>
+</aside>
+<script>
+var P=[
+{n:"Colar Gota de Luz",d:"Semijoia folheada a ouro com pingente em formato de gota. Brilho delicado para o dia a dia.",p:489,e:"💧"},
+{n:"Argola Clássica",d:"Brinco de argola folheado a ouro, leve e versátil. Um clássico que combina com tudo.",p:329,e:"⭕"},
+{n:"Pulseira Encantos",d:"Pulseira folheada a ouro com berloques delicados. Charme em cada detalhe.",p:549,e:"✨"},
+{n:"Anel Trançado",d:"Anel semijoia folheado a ouro com design trançado. Elegância para todos os momentos.",p:399,e:"💍"}];
+var n=0,g=document.getElementById("grid");
+P.forEach(function(x,i){
+  var a=document.createElement("article");a.className="card";
+  a.innerHTML='<div class="ph-w"><div class="ph">'+x.e+'</div></div><div class="info"><p class="tag">Semijoias</p><h3>'+x.n+'</h3><p>'+x.d+'</p></div><div class="buy"><span class="price">'+x.p.toLocaleString("pt-BR",{style:"currency",currency:"BRL"})+'</span><button class="add">Adicionar</button></div>';
+  a.querySelector(".add").onclick=function(){add(i)};
+  g.appendChild(a);
+});
+var C={},pay="pix",$=function(i){return document.getElementById(i)};
+var R=function(v){return v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"})};
+function sub(){var s=0;for(var k in C)s+=P[k].p*C[k];return s}
+function cnt(){var s=0;for(var k in C)s+=C[k];return s}
+function open(o){$("dr").classList.toggle("on",o);$("ov").classList.toggle("on",o)}
+function add(i){C[i]=(C[i]||0)+1;draw();open(true)}
+function qty(i,d){C[i]+=d;if(C[i]<=0)delete C[i];draw()}
+function draw(){
+  var c=cnt(),b=$("count");b.hidden=!c;b.textContent=c;
+  if(!c){$("body").innerHTML='<p class="empty">Sua sacola está vazia.</p>';$("foot").innerHTML="";return}
+  var h="";for(var k in C){h+='<div class="it"><div class="t">'+P[k].e+'</div><div class="m">'+P[k].n+'<small>'+R(P[k].p)+'</small></div><div class="q"><button onclick="qty('+k+',-1)">−</button>'+C[k]+'<button onclick="qty('+k+',1)">+</button></div></div>'}
+  var opts=[["pix","💠","Pix","Aprovação na hora","5% off"],["card","💳","Cartão de crédito","Até 3x sem juros",""],["boleto","🧾","Boleto bancário","Vence em 3 dias úteis",""]];
+  h+='<p class="lb">Forma de pagamento</p>';
+  opts.forEach(function(o){h+='<div class="pm'+(pay==o[0]?" on":"")+'" onclick="setPay(\''+o[0]+'\')"><i>'+o[1]+'</i><span>'+o[2]+'<small>'+o[3]+'</small></span>'+(o[4]?'<em>'+o[4]+'</em>':"")+'</div>'});
+  if(pay=="card")h+='<p class="info2">Você digita os dados do cartão na tela segura do Mercado Pago.</p>';
+  if(pay=="pix")h+='<p class="info2">Você será levado ao Mercado Pago para pagar com Pix.</p>';
+  if(pay=="boleto")h+='<p class="info2">O boleto é gerado depois de confirmar. A compra é liberada após a compensação.</p>';
+  $("body").innerHTML=h;
+  var s=sub(),d=pay=="pix"?s*.05:0,t=s-d;
+  if($("par")){var p="";for(var n=1;n<=3;n++)p+='<option>'+n+'x de '+R(t/n)+' sem juros</option>';$("par").innerHTML=p}
+  $("foot").innerHTML='<div class="row"><span>Subtotal</span><span>'+R(s)+'</span></div>'+(d?'<div class="row"><span>Desconto Pix (5%)</span><span>− '+R(d)+'</span></div>':"")+'<div class="row tt"><span>Total</span><span>'+R(t)+'</span></div><button class="btn" onclick="done()">Finalizar pedido</button>';
+}
+function setPay(m){pay=m;draw()}
+async function done(){
+  var b=document.querySelector("#foot .btn");b.disabled=true;b.textContent="Aguarde...";
+  try{
+    var r=await fetch("/api/checkout",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({method:pay,items:Object.keys(C).map(function(k){return{id:+k,qty:C[k]}})})});
+    var d=await r.json();if(!d.url)throw 0;location.href=d.url;
+  }catch(e){b.disabled=false;b.textContent="Finalizar pedido";alert("Não foi possível iniciar o pagamento. Tente novamente.")}
+}
+$("bag").onclick=function(){draw();open(true)};$("cl").onclick=$("ov").onclick=function(){open(false)};
+var CODE="kaugold@2026",buf="",S={};
+document.addEventListener("keydown",function(e){
+  if(/^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)||e.key.length!==1)return;
+  buf=(buf+e.key).slice(-CODE.length);
+  if(buf===CODE){buf="";painel()}
+});
+function painel(){
+  if(document.getElementById("lj"))return;
+  var m=document.createElement("div");m.className="lj";m.id="lj";
+  var h='<div><h3 class="font-display">Área do lojista</h3><p class="info2">Marque as peças esgotadas. A alteração vale só nesta visita.</p>';
+  P.forEach(function(x,i){h+='<label>'+x.e+' '+x.n+'<input type="checkbox" data-i="'+i+'"'+(S[i]?" checked":"")+'> Esgotado</label>'});
+  h+='<div class="acts"><a href="https://chat.whatsapp.com/GMRoeYWE3D04PBONCIcNak" target="_blank" rel="noreferrer">Grupo do WhatsApp</a><button class="p" id="sair">Sair</button></div></div>';
+  m.innerHTML=h;document.body.appendChild(m);
+  m.onclick=function(e){if(e.target===m)m.remove()};
+  document.getElementById("sair").onclick=function(){m.remove()};
+  m.querySelectorAll("input").forEach(function(c){c.onchange=function(){
+    var i=+c.dataset.i;S[i]=c.checked;var b=document.querySelectorAll(".add")[i];
+    b.disabled=c.checked;b.textContent=c.checked?"Esgotado":"Adicionar";b.style.opacity=c.checked?.5:1;
+    if(c.checked&&C[i]){delete C[i];draw()}
+  }});
+}
+draw();
+</script>
+</body>
+</html>
