@@ -1,0 +1,15 @@
+KAU GOLD — recebimento real com Mercado Pago (Vercel)
+
+1) Mercado Pago: crie uma aplicação em "Suas integrações" e copie o Access Token
+   de PRODUÇÃO (comece testando com o de TESTE).
+2) Suba esta pasta no GitHub e importe na Vercel.
+3) Na Vercel > Settings > Environment Variables, crie:
+   MP_ACCESS_TOKEN     = seu access token
+   SITE_URL            = https://www.kaugold.com.br  (sem barra no final)
+   MP_WEBHOOK_SECRET   = chave secreta do webhook (opcional, recomendado)
+4) No Mercado Pago > Webhooks, cadastre: https://www.kaugold.com.br/api/webhook
+   com o evento "Pagamentos".
+5) Faça uma compra de teste antes de divulgar.
+
+Preços e produtos ficam em api/checkout.js (lista PRODUCTS, mesma ordem do index.html).
+Nunca coloque o Access Token no index.html.
